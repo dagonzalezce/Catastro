@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+  color: #666F6D;
 }
 
 a {
@@ -12,5 +14,78 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  background-color: #FFFEEB;
+}
+
+header{
+  width: 100vw;
+  height: 100px;
+  background: url('../images/catastro.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+header .logo{
+  width: 100vw;
+  background-color: #F6F6F6;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+}
+
+header p{
+  width: fit-content;
+  margin: 5px auto 5px auto;
+}
+
+main{
+  width: 100%;
+}
+
+.button-outline{
+  outline:none;
+  display: block;
+  border: solid 1px #666F6D;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: #FFFEEB;
+  color: #666F6D;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.button-outline:hover{
+  background: #666F6D;
+}
+
+
+
+main .titleWrapper{
+  padding: 20px 50px 10px 50px;
+  margin: auto;
+  width: min(100%, 1000px);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;  
+}
+
+main .contentWrapper{
+  margin: 0px 25px 10px 25px;
+  min-height: 400px;
+  background-color: #F6F6F6;
+}
+
+main .prediosWrapper{
+  margin:auto;
+  width: min(100%, 900px);
+}
+
+footer p{
+  text-align: center;
 }
